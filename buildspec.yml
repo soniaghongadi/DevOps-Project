@@ -4,7 +4,6 @@ phases:
     commands:
       - sudo apt get update -y
       - sudo apt install httpd
-      - pip3 install requirements.txt
       - echo "Entered in prebuild phase";
   build:
     commands:
