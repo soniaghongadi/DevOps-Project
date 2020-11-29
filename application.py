@@ -46,7 +46,11 @@ class Product(db.Model):
 # Route to home/login page 
 @app.route("/",methods=["GET", "POST"])
 def index():
-    return redirect(url_for('show_all'))
+    # This responds to AWS healthcheck service with 200 response
+    user_agent = request.headers.get('User-Agent')
+    if "ELB-HealthChecker" in user_agent:
+        return render_template('awsHealthOk.html')
+    return redirect(url_for('show_all')) #300
 
 @app.route("/login",methods=["GET","POST"])
 def login():
