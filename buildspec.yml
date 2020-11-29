@@ -1,0 +1,23 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Entered in prebuild phase";
+  build:
+    commands:
+      - echo "Entered in build phase"
+  post_build:
+    commands:
+      - echo "Enteredin post-build phase"
+artifacts:
+  files:
+    - application.py
+    - templates/addproduct.html
+    - templates/error_product404.html
+    - templates/index.html
+    - templates/prod.html
+    - templates/register.html
+    - templates/show_all.html
+    - static/1.jpg
+    - static/BenutzerArt.jfif
+    - static/style.css
