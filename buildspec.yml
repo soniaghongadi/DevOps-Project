@@ -2,14 +2,12 @@ version: 0.2
 phases:
   pre_build: 
     commands:
-      - apt-get install -y
       - echo "Entered in prebuild phase";
   build:
     commands:
       - echo "Entered in build phase"
   post_build:
     commands:
-      - python3 application.py
       - echo "Enteredin post-build phase"
 artifacts:
   files:
