@@ -3,5 +3,5 @@
         "--load-plugins",
         "pylint-flask"
     ],
-    "python.pythonPath": "/home/sonia/Desktop/Sem1/DevOpsSec/DevOps Project/env/bin/python3"
+    "python.pythonPath": "/home/sonia/Desktop/Sem1/DevOpsSec/DevOps Project/virt/bin/python3.8"
 }

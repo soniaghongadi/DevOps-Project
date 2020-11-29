@@ -2,10 +2,12 @@ version: 0.2
 phases:
   pre_build: 
     commands:
-      - echo "Entered in prebuild phase";
+      - echo "Completed pre_build"
   build:
     commands:
-      - echo "Entered in build phase"
+      - echo "Starting build"
+      - pip install -r requirements.txt
+      - echo "Build complete"
   post_build:
     commands:
       - echo "Enteredin post-build phase"
