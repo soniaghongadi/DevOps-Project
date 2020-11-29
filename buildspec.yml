@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build: 
     commands:
-      - sudo apt-get update
+      - sudo apt-get update -y
       - sudo apt-get -y install httpd
       - echo "Entered in prebuild phase";
   build:
