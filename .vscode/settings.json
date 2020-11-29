@@ -2,5 +2,6 @@
     "python.linting.pylintArgs": [
         "--load-plugins",
         "pylint-flask"
-    ]
+    ],
+    "python.pythonPath": "/home/sonia/Desktop/Sem1/DevOpsSec/DevOps Project/env/bin/python3"
 }
