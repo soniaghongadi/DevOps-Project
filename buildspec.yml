@@ -8,7 +8,6 @@ phases:
       - echo "Entered in build phase"
   post_build:
     commands:
-      - python3 application.py runserver
       - echo "Enteredin post-build phase"
 artifacts:
   files:
