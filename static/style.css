@@ -535,10 +535,10 @@ input, button {
 .topnav a {
   float: left;
   color:white;
-  text-align: center;
+  text-align: center; 
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 table tbody tr td {
@@ -552,4 +552,19 @@ table thead tr th {
 caption {
   padding: 10px;
   caption-side: bottom;
+}
+
+/* Header/Logo Title */
+.header{
+  text-indent: 35%;
+  color: rgba(204, 214, 250, 0.938);
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.h3-TableTile
+{
+  color: rgba(204, 214, 250, 0.938);
+  padding: 15px 18px;
+  text-align: left;
 }

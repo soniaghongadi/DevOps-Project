@@ -12,8 +12,11 @@
 </head>
 
 <body>
+
    <div class="cont">
+      
       <div class="topnav">
+         
          {% if user %}
          <a href="{{ url_for('addproduct') }}">Post Your Ad</a>
 
@@ -22,43 +25,51 @@
          <a href="{{ url_for('login') }}">Login</a>
          <a href="{{ url_for('register') }}">Register</a>
          {% endif %}
-
+         <div class="header">
+            <h1>Online Bidding</h1>
+         </div>
       </div>
+
+
       {%- for message in get_flashed_messages() %}
       {{ message }}
       {%- endfor %}
-
-      <table class="table table-bordered table-dark">
-         <caption hidden> Product Details</caption>
-
-         <thead class="thead-dark">
-            <tr>
-               <th id="prod_name">Product Type/Name</th>
-               <th id="prod_price">Price of Product</th>
-               <th id="prod_spec">Product Details</th>
-               <th id="seller_name">Seller Name</th>
-               <th id="seller_emailID">Seller's Email ID</th>
-               <th id="seller_contactNum">Seller's Contact Number</th>
-            </tr>
-         </thead>
-
-         <tbody>
-            {% for products in Product %}
+      <h3 class="h3-TableTile">Available Products</h3>
+         <table class="table table-bordered table-dark">
+            <caption hidden> Product Details</caption> 
+            
+      <thead class="thead-dark">
+         <tr>
             {% if user %}
-            <h3><a href="{{ url_for('idv_prod', product_id= products.id ) }}">{{ products.Product_name}}<h6>Click here
-                     to update or delete the product</h6></a></h3>
+            <th id="prod_name">Edit product</th>
             {% endif %}
-            <tr>
-               <td>{{ products.Product_name}}</td>
-               <td>{{ products.Product_price}}</td>
-               <td>{{ products.Prod_spec}}</td>
-               <td>{{ products.seller_name}}</td>
-               <td>{{ products.User_email }}</td>
-               <td>{{ products.contact_num }}</td>
-            </tr>
-            {% endfor %}
-         </tbody>
+            <th id="prod_name">Product Type/Name</th>
+            <th id="prod_price">Price of Product</th>
+            <th id="prod_spec">Product Details</th>
+            <th id="seller_name">Seller Name</th>
+            <th id="seller_emailID">Seller's Email ID</th>
+            <th id="seller_contactNum">Seller's Contact Number</th>
+         </tr>
+      </thead>
+
+      <tbody>
+
+         {% for products in Product %}
+         <tr>
+            {% if user %}
+            <td><a href="{{ url_for('idv_prod', product_id= products.id ) }}">Edit</a></td>
+            {% endif %}
+            <td>{{ products.Product_name}}</td>
+            <td>{{ products.Product_price}}</td>
+            <td>{{ products.Prod_spec}}</td>
+            <td>{{ products.seller_name}}</td>
+            <td>{{ products.User_email }}</td>
+            <td>{{ products.contact_num }}</td>
+         </tr>
+         {% endfor %}
+      </tbody>
       </table>
+      <h4 style="font-size-adjust: inherit; color:white">To add your ad, please login if account already exits, or register with your email address. </h> 
    </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
