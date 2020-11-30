@@ -118,8 +118,8 @@ def register():
         # Add to database 
         db.session.add(register)
         db.session.commit()
-        return redirect(url_for('index'))
-    return render_template(REGISTER_PAGE)
+        return redirect(url_for('login'))
+    return render_template(REGISTER_PAGE, )
 
 # Route to logput page
 @app.route('/logout')
