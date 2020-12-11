@@ -59,12 +59,12 @@
             {% if user %}
             <td><a href="{{ url_for('idv_prod', product_id= products.id ) }}">Edit</a></td>
             {% endif %}
-            <td>{{ products.Product_name}}</td>
-            <td>{{ products.Product_price}}</td>
-            <td>{{ products.Prod_spec}}</td>
-            <td>{{ products.seller_name}}</td>
-            <td>{{ products.User_email }}</td>
-            <td>{{ products.contact_num }}</td>
+            <td id="prod_name">{{ products.Product_name}}</td>
+            <td id="prod_price">{{ products.Product_price}}</td>
+            <td id="prod_spec">{{ products.Prod_spec}}</td>
+            <td id="seller_name">{{ products.seller_name}}</td>
+            <td id="seller_emailID">{{ products.User_email }}</td>
+            <td id="seller_contactNum">{{ products.contact_num }}</td>
          </tr>
          {% endfor %}
       </tbody>
