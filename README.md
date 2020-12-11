@@ -9,7 +9,7 @@
     Python- 3.8.5
     Flask- 1.1.2
     SQLAlchemy
-    Static Code Analysis tool - sonacloud
+    Static Code Analysis tool - sonarcloud
     CI/CD Pipeline tool - AWS CodePipeline 
 
 ## Implementation 
