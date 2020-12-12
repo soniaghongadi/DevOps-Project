@@ -45,3 +45,4 @@ In this project, we have developed Online Bidding web application - an applicati
     
 ## SCreenshots 
 ![login screen](https://i.ibb.co/fp1CT9j/screenshot.png)
+
