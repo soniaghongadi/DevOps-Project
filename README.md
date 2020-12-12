@@ -42,3 +42,6 @@ In this project, we have developed Online Bidding web application - an applicati
     Build : AWS CodeBuild 
                 Build specifications : buildspec.yml 
     Deploy : AWS Elastic Beanstalk 
+    
+## SCreenshots 
+![login screen](https://i.ibb.co/fp1CT9j/screenshot.png)
