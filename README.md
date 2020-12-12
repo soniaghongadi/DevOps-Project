@@ -2,7 +2,7 @@
 
 ## Objective  
     
-    In this project, we have developed Online Bidding web application - an application that helps users to sell or buy an used and newly launched products and perfomed DevOps practices such as Static code analysis, CI/CD Pipeline using various tools.
+In this project, we have developed Online Bidding web application - an application that helps users to sell or buy an used and newly launched products and perfomed DevOps practices such as Static code analysis, CI/CD Pipeline using various tools.
 
 ## Tools/technologies used 
     
