@@ -23,16 +23,19 @@ In this project, we have developed Online Bidding web application - an applicati
 
 ## Routes
 
-    GET
-        GET ALL: [http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all](http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all)
-        GET BY ID: http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all/{id}
-    POST
+GET
+
+    GET ALL: [http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all](http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all)
+        
+    GET BY ID: http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all/{id}
+        
+POST
         POST(Seller): http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/register 
         POST(Product): http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all/addproduct  
         POST(login seller): http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/login 
-    UPDATE 
+UPDATE 
         PUT BY ID: http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all/{id}/update
-    DELETE
+DELETE
         DELETE BY ID: http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbeanstalk.com/show_all/{id}
 
 ## CI/CD Pipeline steps 
