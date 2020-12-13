@@ -64,6 +64,6 @@ DELETE BY ID: http://onlinebiddingwebapp-env-1.eba-sn6gwwxd.us-east-1.elasticbea
 3. `pip install -r requirements.txt`
 4. `python application.py runserver`
     
-## SCreenshots 
+## Screenshots 
 ![login screen](https://i.ibb.co/fp1CT9j/screenshot.png)
 
